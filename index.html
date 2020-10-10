@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="vi-VN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="StyleSheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <h1>MySite</h1>
+        <h3>Slogan go here...</h3>
+    </header>
+    <nav>
+        <ul>
+            <li><a data-section="home">Home</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Phim Truyền Hình</a>
+                <div class="dropdown-content">
+                    <a data-section="VietNam">Phim Việt Nam</a>
+                    <a data-section="HanQuoc">Phim Hàn Quốc</a>
+                    <a data-section="HoaNgu">Hoa Ngữ</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Hoạt Hình</a>
+                <div class="dropdown-content">
+                    <a data-section="Anime">Anime</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">TV Show</a>
+                <div class="dropdown-content">
+                    <a data-section="ShowTT">Show Thực Tế</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Hài Hước</a>
+                <div class="dropdown-content">
+                    <a data-section="TPH">Tiểu Phẩm Hài</a>
+                </div>
+            </li>
+            <li style="float:left;padding:10px 250px;">
+                <div class="box">
+                    <div class="container-1">
+                        <input type="search" id="search" placeholder="Search..." />
+                        <span class="icon"><i class="fa fa-search"></i></span>
+                    </div>
+                  </div>
+            </li>
+            <li style="float:right;"><a data-section="dangnhap">Đăng nhập</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hideable-section">
+        <h3>Chào mừng bạn đến với Langding Page giải trí trong ngày</h3>
+        <img class="mySlides" src="images/1.jpg">
+        <img class="mySlides" src="images/2.jpg">
+        <img class="mySlides" src="images/3.jpg">
+        <img class="mySlides" src="images/4.jpg">
+    </section>
+
+    <section id="VietNam" class="hideable-section">
+        <p>Phim Việt Nam</p>
+        <div class="gallery">
+            <a target="_blank" href="https://www.youtube.com/embed/NVkzdSb-Q-U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen">
+                <p>
+                    <img src="images/bankesophan.jpg">
+                </p>
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="https://www.youtube.com/embed/VJsIGr8y-4k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen">
+                <p>
+                    <img src="images/bannangthep.jpg">
+                </p>
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="https://www.youtube.com/embed/UpGyMQtWxGE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen">
+                <p>
+                    <img src="images/hauduematroi.jpg">
+                </p>
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="https://www.youtube.com/embed/kddr6_ZAGIA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen">
+                <p>
+                    <img src="images/biendoigiongto.jpg">
+                </p>
+            </a>
+        </div>
+    </section>  
+
+    <section id="HanQuoc" class="hideable-section">
+        <p>Phim Hàn Quốc</p>
+        <div class="gallery">
+            <a target="_blank" href="https://www.youtube.com/embed/ljEoBoCeGOY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen">
+                <p>
+                    <img src="images/muonneotinhyeu.jpg">
+                </p>
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="https://www.youtube.com/embed/Q41BDzKDpio" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen">
+                <p>
+                    <img src="images/dieulamnenhp.jpg">
+                </p>
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="https://www.youtube.com/embed/q8rcV_mOJy0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen">
+                <p>
+                    <img src="images/chuyentinhmary.jpg">
+                </p>
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="https://www.youtube.com/embed/8S5cao1jLuo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen">
+                <p>
+                    <img src="images/bimatnangfangirl.jpg">
+                </p>
+            </a>
+        </div>
+    </section>
+
+    <section id="HoaNgu" class="hideable-section">
+        <p>Phim Hoa Ngữ</p>
+        <div class="gallery">
+            <a target="_blank" href="https://www.youtube.com/embed/ro1aCpgJG0s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen">
+                <p>
+                    <img src="images/thanhxuantuoidep.jpg">
+                </p>
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="https://www.youtube.com/embed/vDxrIyfOztE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen">
+                <p>
+                    <img src="images/bimatmuahenamay.jpg">
+                </p>
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="https://www.youtube.com/embed/XNHMYjr0zL0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen">
+                <p>
+                    <img src="images/xincahokieuan.jpg">
+                </p>
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="https://www.youtube.com/embed/F0u9g1njsj4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen">
+                <p>
+                    <img src="images/thieunuthaicucquyen.jpg">
+                </p>
+            </a>
+        </div>
+    </section>
+
+    <section id="Anime" class="hideable-section">
+        <p>Anime</p>
+        <div class="gallery">
+            <a target="_blank" href="https://www.youtube.com/embed/SgF4jvPZqoo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen">
+                <p>
+                    <img src="images/plunderer.jpg">
+                    <div class="desc">Đi Tìm Sát Tinh Vương-Tập 20</div>
+                </p>
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="https://www.youtube.com/embed/L1h-BhYgiDE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen">
+                <p>
+                    <img src="images/hakubo.jpg">
+                    <div class="desc">Hakubo</div>
+                </p>
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="https://www.youtube.com/embed/x0viQsjJVYI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen">
+                <p>
+                    <img src="images/chihayafuru.jpg">
+                    <div class="desc">Chihayafuru Moments</div>
+                </p>
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="https://www.youtube.com/embed/J4Baofjx96k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen">
+                <p>
+                    <img src="images/majusushi.jpg">
+                    <div class="desc">Majutsushi - Tập 2</div>
+                </p>
+            </a>
+        </div>
+    </section>
+
+    <section id="ShowTT" class="hideable-section">
+        <p>Show Thực Tế</p>
+        <div class="gallery">
+            <a target="_blank" href="https://www.youtube.com/embed/elq2p5ccxjk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen">
+                <p>
+                    <img src="images/condakhonglon.jpg">
+                </p>
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="https://www.youtube.com/embed/GLE-t3W5bs0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen">
+                <p>
+                    <img src="images/belamnguoilon.jpg">
+                </p>
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="https://www.youtube.com/embed/i9LDnxM0A-s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen">
+                <p>
+                    <img src="images/ngoinhachung.jpg">
+                </p>
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="https://www.youtube.com/embed/e7_jD0II7WA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen">
+                <p>
+                    <img src="images/bietdoix6.jpg">
+                </p>
+            </a>
+        </div>
+    </section>
+
+    <section id="TPH" class="hideable-section">
+        <p>Tiểu Phẩm Hài</p>
+        <div class="gallery">
+            <a target="_blank" href="https://www.youtube.com/embed/rimJTeGHTaU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen">
+                <p>
+                    <img src="images/ongioicaudayroi.jpg">
+                    <span style="color: cornflowerblue; font-size: 20px;">Ơn Giời! Cậu Đây Rồi!</span><br>
+                    <span style="color: black; font-size: 15px;">Thể Loại: </span>
+                    <span style="color: cornflowerblue; font-size: 15px;">Tiểu Phẩm Hài, Sân Khấu, Clip ngắn</span>
+                    <br><span style="color: black; font-size: 15px;">“Ơn giời! Cậu đây rồi!” là một chương trình hài mới, với đặc sản là sự bất ngờ! 
+                    <br>Đây là chương trình giải trí hài chưa đựng nhiều yếu tố hấp dẫn, hào hứng trong từng phút,.....</span>
+                </p>
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="https://www.youtube.com/embed/s8PbGzekx3E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen">
+                <p>
+                    <img src="images/bacxiu.jpg">
+                </p>
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="https://www.youtube.com/embed/UmDu2HFlLGk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen">
+                <p>
+                    <img src="images/pho.jpg">
+                </p>
+            </a>
+        </div>
+    </section>
+
+    <section id="dangnhap" class="hideable-section">
+        <h1 style="color: brown; text-align: center; font-size: 25px;">Đăng nhập tài khoản tại đây</h1>
+        <form style="text-align: center;">
+            <br><label for="fname">Họ Đệm</label><br>
+            <input type="text" placeholder="Họ Đệm"  id="fname" name="fname" value=""><br>
+            <br><label for="name">Tên</label><br>
+            <input type="text" placeholder="Tên"  id="name" name="name" value=""><br>
+            <br><label for="tlphone" placeholder="Số điện thoại">Số Điện Thoại:</label><br>
+            <input type="text" id="tlphone" name="tlphone" value=""><br>
+            <br><input type="submit">
+        </form>
+    </section>
+    
+    <!--Footer-->
+    <footer>
+        <a><h2>ĐỐI TÁC</h2></a>
+        <a href="https://www.google.com/" target="_blank"><img src="images/gg.png"></a>
+        <a href="#"><img src="images/43-twitter-512.webp"></a>
+        <a href="https://www.facebook.com/profile.php?id=100013495569333" target="_blank"><img src="images/facebook-2.png"></a>
+        <a href="https://www.youtube.com/?gl=VN" target="_blank"><img src="images/download.png"></i></a>
+        <a href="#"><img src="images/in.png"></a>
+    </footer>
+
+    <!--Javascript-->
+    <script>
+        $(function() {
+            $('nav ul li a').click(function() {
+                // Lấy section để hiển thị
+                var $section = $('#' + $(this).data('section'));
+
+                // Nếu đang hiện thì không làm gì.
+                // Nếu không, ẩn tất cả các se cho hiện (kiểu fade in) phần mong muốn.
+                if (!$section.is(':visible')) {
+                    $('.hideable-section').hide();
+                    $section.fadeIn();
+                }
+            });
+        });
+    </script>
+    
+    <script>
+        // Automatic Slideshow - change image every 3 seconds
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}
+          x[myIndex-1].style.display = "block";
+          setTimeout(carousel, 3000);
+        }
+        </script>
+</body>
+
+</html>
